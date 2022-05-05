@@ -82,7 +82,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  
+  margin-right: 93px;
 }
 
 .logoweb {
@@ -91,7 +91,12 @@ body {
 
 .navigation{
   display: flex;
+  align-items: center;
   
+}
+
+.nav-list{
+  display: flex;
 }
 
 
@@ -105,6 +110,12 @@ body {
   letter-spacing: 0.02em;
 }
 
+.contact-list{
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
 .contact-list-link {
   color: var(--main-text-color);
   text-decoration: none;
@@ -112,9 +123,18 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.02em;
-  
+  letter-spacing: 0.02em;    
 }
+
+.contact-item:not(:last-child){
+  margin-right: 50px;
+}
+
+.nav-item:not(:last-child){
+  margin-right: 50px;
+}
+
+
 
 .nav-list-link:hover,
 .nav-list-link:focus,
@@ -160,6 +180,8 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button:hover,
