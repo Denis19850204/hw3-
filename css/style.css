@@ -27,6 +27,7 @@ p {
 .nav-list,
 .contact-list,
 .list,
+.list-benefits,
 .address-list {
   list-style: none;
   padding: 0;
@@ -74,6 +75,8 @@ body {
   border-bottom: 1px solid var(--header-border-color);
 }
 
+
+
 .logo {
   color: #000000;
   text-decoration: none;
@@ -88,6 +91,7 @@ body {
 .logoweb {
   color: var(--accent-color);
 }
+
 
 .navigation{
   display: flex;
@@ -133,8 +137,6 @@ body {
 .nav-item:not(:last-child){
   margin-right: 50px;
 }
-
-
 
 .nav-list-link:hover,
 .nav-list-link:focus,
@@ -182,6 +184,14 @@ body {
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  border: transparent;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+
 }
 
 .button:hover,
@@ -196,6 +206,15 @@ body {
 .benefits {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.list-benefits{
+  display: flex;
+ 
+}
+
+.item:not(:last-child){
+  margin-right: 30px;
 }
 
 .subtitle-benefits {
@@ -232,7 +251,11 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+ 
+ 
 }
+
+
 /* -------------------------------------- */
 
 /* Наша команда */
