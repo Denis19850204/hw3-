@@ -57,11 +57,11 @@ body {
   font-size: 14px;
 }
 
-.container{
+.container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
 }
 /* ---------------------------------------- */
 
@@ -74,8 +74,13 @@ body {
   border-bottom: 1px solid var(--header-border-color);
 }
 
- .page-header{
+.page-header {
   display: flex;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -93,17 +98,13 @@ body {
   color: var(--accent-color);
 }
 
-
-.navigation{
-  display: flex;
-  align-items: center;
-  
-}
-
-.nav-list{
+.nav-list {
   display: flex;
 }
 
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
 
 .nav-list-link {
   color: var(--tittle-color);
@@ -117,7 +118,11 @@ body {
   padding-bottom: 32px;
 }
 
-.contact-list{
+.current {
+  color: var(--accent-color);
+}
+
+.contact-list {
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -130,16 +135,12 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.02em; 
+  letter-spacing: 0.02em;
   padding-top: 32px;
-  padding-bottom: 32px;   
+  padding-bottom: 32px;
 }
 
-.contact-item:not(:last-child){
-  margin-right: 50px;
-}
-
-.nav-item:not(:last-child){
+.contact-item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -150,9 +151,6 @@ body {
   color: var(--accent-color);
 }
 
-.current {
-  color: var(--accent-color);
-}
 /* ------------------------------------- */
 
 /* Оглавление */
@@ -196,7 +194,6 @@ body {
   border: transparent;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px #00000040;
-
 }
 
 .button:hover,
@@ -204,6 +201,7 @@ body {
   background-color: var(--hover-button-color);
   color: var(--secondary-color);
 }
+
 /* --------------------------------------------- */
 
 /* Преимущества */
@@ -213,12 +211,11 @@ body {
   padding-bottom: 94px;
 }
 
-.list-benefits{
+.list-benefits {
   display: flex;
- 
 }
 
-.item:not(:last-child){
+.item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -239,6 +236,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+
 /* -------------------------------------------- */
 
 /* Чем мы занимаемся */
@@ -255,16 +253,16 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px; 
-}
-.list{
-  display: flex;  
+  margin-bottom: 50px;
 }
 
-.item:not(:last-child){
+.list {
+  display: flex;
+}
+
+.item:not(:last-child) {
   margin-right: 30px;
 }
-
 
 /* -------------------------------------- */
 
@@ -283,7 +281,7 @@ body {
   box-shadow: 0px 4px 4px 0px #00000040;
 }
 
-.team-item:not(:last-child){
+.team-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -309,6 +307,7 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
 }
+
 /* ------------------------------------ */
 
 /* Футер */
@@ -353,6 +352,7 @@ body {
 .address-list .contact:focus {
   color: var(--accent-color);
 }
+
 /* --------------------------------------- */
 
 /* Портфолио */
@@ -363,19 +363,15 @@ body {
   padding-bottom: 99px;
 }
 
-.portfolio-list{
+.portfolio-list {
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
-  
 }
 
-
-.portf-link:not(:last-child){
+.portf-link:not(:last-child) {
   margin-right: 8px;
 }
- 
-
 
 .current-button {
   background-color: var(--accent-color);
@@ -415,21 +411,28 @@ body {
   color: var(--secondary-color);
 }
 
-.card-list{
+.card-list {
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
 
-.work-list{
+.work-list {
   margin-left: 30px;
   margin-top: 30px;
+  width: 370px;
+  background-color: var(--secondary-color);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0px 4px 4px 0px #00000040;
 }
 
 .work-link {
   display: block;
   text-decoration: none;
-  
+}
+
+.image-work{
+  margin-bottom: 20px;
 }
 
 .subtitle-work {
@@ -440,6 +443,8 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
+  margin-left: 24px;
 }
 
 .text-work {
@@ -448,11 +453,7 @@ body {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  margin-left: 24px;
 }
 
-.work-list {
-  width: 370px;
-  background-color: var(--secondary-color);
-  border: 1px solid var(--border-color);
-  box-shadow: 0px 4px 4px 0px #00000040;
-}
